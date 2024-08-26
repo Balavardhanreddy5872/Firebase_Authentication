@@ -1,0 +1,121 @@
+/* styles.css */
+body{
+    background-color: #333;
+    top: 0%;
+}
+.body1{
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    margin:0%;
+}
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 55vw;
+    max-width: 450px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.d-grid {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 80%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #6a11cb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #2575fc;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.forgot-password a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #6a11cb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 1rem;
+    }
+
+    form h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-control,
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
